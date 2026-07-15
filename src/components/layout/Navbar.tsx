@@ -18,6 +18,7 @@ export const Navbar: React.FC = () => {
     { name: 'Attorneys', path: '/attorneys' },
     { name: 'Case Results', path: '/case-results' },
     { name: 'Insights', path: '/insights' },
+    { name: 'Testimonials', path: '/testimonials' },
     { name: 'Contact', path: '/contact' }
   ];
 
@@ -25,8 +26,8 @@ export const Navbar: React.FC = () => {
     <header className="sticky top-0 z-50 bg-ivory border-b border-charcoal/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo / Wordmark */}
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           className="font-serif text-xl md:text-2xl font-semibold text-charcoal hover:opacity-95 transition-opacity select-none focus:outline-none focus:ring-1 focus:ring-gold focus:ring-offset-2"
         >
           Adeyemi & Partners
@@ -39,10 +40,9 @@ export const Navbar: React.FC = () => {
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `font-sans text-xs uppercase tracking-wider transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-gold focus:ring-offset-2 ${
-                  isActive 
-                    ? 'text-burgundy font-semibold border-b border-burgundy/40 pb-1' 
-                    : 'text-charcoal/70 hover:text-burgundy'
+                `font-sans text-xs uppercase tracking-wider transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-gold focus:ring-offset-2 ${isActive
+                  ? 'text-burgundy font-semibold border-b border-burgundy/40 pb-1'
+                  : 'text-charcoal/70 hover:text-burgundy'
                 }`
               }
             >
@@ -71,8 +71,7 @@ export const Navbar: React.FC = () => {
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) =>
-                  `font-sans text-sm uppercase tracking-widest py-2 border-b border-charcoal/5 last:border-b-0 focus:outline-none ${
-                    isActive ? 'text-burgundy font-semibold' : 'text-charcoal/75'
+                  `font-sans text-sm uppercase tracking-widest py-2 border-b border-charcoal/5 last:border-b-0 focus:outline-none ${isActive ? 'text-burgundy font-semibold' : 'text-charcoal/75'
                   }`
                 }
               >
