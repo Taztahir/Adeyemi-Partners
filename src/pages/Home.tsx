@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 // Components
 import Hero from '../components/sections/Hero';
 import TrustBar from '../components/sections/TrustBar';
-import TestimonialCarousel from '../components/sections/TestimonialCarousel';
+// import TestimonialCarousel from '../components/sections/TestimonialCarousel';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Badge } from '../components/ui/Badge';
@@ -57,10 +57,10 @@ export const Home: React.FC = () => {
   // Animation variants
   const sectionVariants = {
     hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 25 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const } 
+      transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }
     }
   };
 
@@ -77,8 +77,8 @@ export const Home: React.FC = () => {
 
   const cardVariants = {
     hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 15 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const }
     }
@@ -93,19 +93,19 @@ export const Home: React.FC = () => {
       <TrustBar />
 
       {/* 3. Practice Areas Section */}
-      <motion.section 
+      <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={sectionVariants}
-        className="py-20 md:py-28 max-w-7xl mx-auto px-6" 
+        className="py-20 md:py-28 max-w-7xl mx-auto px-6"
         aria-labelledby="practice-areas-title"
       >
         <div className="text-center space-y-4 mb-16">
           <span className="text-gold text-xs uppercase tracking-widest font-sans font-medium">
             Our Expertise
           </span>
-          <h2 
+          <h2
             id="practice-areas-title"
             className="font-serif text-3xl md:text-4xl font-semibold text-charcoal"
           >
@@ -114,7 +114,7 @@ export const Home: React.FC = () => {
           <div className="w-12 h-[1px] bg-gold mx-auto"></div>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -143,7 +143,7 @@ export const Home: React.FC = () => {
                   </div>
                   {/* Link action */}
                   <div className="pt-2">
-                    <Link 
+                    <Link
                       to={`/practice-areas/${area.slug}`}
                       className="font-sans text-[10px] uppercase tracking-widest text-charcoal hover:text-burgundy transition-colors font-bold inline-flex items-center space-x-1 focus:outline-none"
                     >
@@ -159,12 +159,12 @@ export const Home: React.FC = () => {
       </motion.section>
 
       {/* 4. Notable Case Results Section */}
-      <motion.section 
+      <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={sectionVariants}
-        className="bg-[#EFEBE0] py-20 md:py-28 border-y border-charcoal/5" 
+        className="bg-[#EFEBE0] py-20 md:py-28 border-y border-charcoal/5"
         aria-labelledby="case-results-title"
       >
         <div className="max-w-7xl mx-auto px-6">
@@ -173,14 +173,14 @@ export const Home: React.FC = () => {
               <span className="text-gold text-xs uppercase tracking-widest font-sans font-medium">
                 Proven Track Record
               </span>
-              <h2 
+              <h2
                 id="case-results-title"
                 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal"
               >
                 Notable Case Results
               </h2>
             </div>
-            <Link 
+            <Link
               to="/case-results"
               className="font-sans text-xs uppercase tracking-widest text-burgundy hover:text-gold transition-colors font-semibold inline-flex items-center space-x-1 border-b border-burgundy/20 pb-1 focus:outline-none"
             >
@@ -189,7 +189,7 @@ export const Home: React.FC = () => {
             </Link>
           </div>
 
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -219,19 +219,19 @@ export const Home: React.FC = () => {
       </motion.section>
 
       {/* 5. Distinguished Attorneys Section */}
-      <motion.section 
+      <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={sectionVariants}
-        className="py-20 md:py-28 max-w-7xl mx-auto px-6" 
+        className="py-20 md:py-28 max-w-7xl mx-auto px-6"
         aria-labelledby="attorneys-title"
       >
         <div className="text-center space-y-4 mb-16">
           <span className="text-gold text-xs uppercase tracking-widest font-sans font-medium">
             Our Leadership
           </span>
-          <h2 
+          <h2
             id="attorneys-title"
             className="font-serif text-3xl md:text-4xl font-semibold text-charcoal"
           >
@@ -240,7 +240,7 @@ export const Home: React.FC = () => {
           <div className="w-12 h-[1px] bg-gold mx-auto"></div>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -252,9 +252,9 @@ export const Home: React.FC = () => {
               <Card borderVariant="charcoal" className="flex flex-col space-y-4 p-4">
                 {/* Photo Area with Fail-safe Fallback */}
                 <div className="aspect-[4/5] bg-charcoal/5 border border-charcoal/10 rounded-[4px] overflow-hidden relative">
-                  <img 
-                    src={attorney.image} 
-                    alt={attorney.name} 
+                  <img
+                    src={attorney.image}
+                    alt={attorney.name}
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                     onError={(e) => {
                       const target = e.target as HTMLElement;
@@ -288,23 +288,23 @@ export const Home: React.FC = () => {
         </motion.div>
       </motion.section>
 
-      {/* 6. Testimonial Section */}
-      <TestimonialCarousel />
+      {/* 6. Testimonial Section
+      <TestimonialCarousel /> */}
 
       {/* 7. Latest Insights Section */}
-      <motion.section 
+      <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={sectionVariants}
-        className="py-20 md:py-28 max-w-7xl mx-auto px-6" 
+        className="py-20 md:py-28 max-w-7xl mx-auto px-6"
         aria-labelledby="insights-title"
       >
         <div className="text-center space-y-4 mb-16">
           <span className="text-gold text-xs uppercase tracking-widest font-sans font-medium">
             Legal Briefings
           </span>
-          <h2 
+          <h2
             id="insights-title"
             className="font-serif text-3xl md:text-4xl font-semibold text-charcoal"
           >
@@ -313,7 +313,7 @@ export const Home: React.FC = () => {
           <div className="w-12 h-[1px] bg-gold mx-auto"></div>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -336,7 +336,7 @@ export const Home: React.FC = () => {
                 </div>
                 <div className="pt-2 flex justify-between items-center text-[11px] font-sans text-charcoal/50">
                   <span>{insight.date}</span>
-                  <Link 
+                  <Link
                     to={`/insights/${insight.slug}`}
                     className="font-semibold text-burgundy hover:text-gold uppercase tracking-wider flex items-center space-x-1 focus:outline-none"
                   >
@@ -351,7 +351,7 @@ export const Home: React.FC = () => {
       </motion.section>
 
       {/* 8. Call to Action (CTA) Section */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

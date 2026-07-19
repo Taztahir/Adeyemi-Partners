@@ -155,43 +155,4 @@ export const insights: Insight[] = [
       bio: "Oluwaseun specializes in complex international litigation and corporate advisory."
     }
   },
-  {
-    id: "cross-border-regulatory-evolution-2024",
-    title: "Navigating the Evolution of Cross-Border Regulatory Frameworks in 2024",
-    slug: "cross-border-regulatory-evolution-2024",
-    date: "February 28, 2024",
-    category: "Regulatory Compliance",
-    description: "As global markets undergo a period of intense structural shifts, the regulatory landscape for cross-border transactions has reached a critical inflection point.",
-    readTime: "8 min read",
-    author: {
-      name: "Oluwaseun Adeyemi",
-      role: "Managing Partner",
-      image: "/images/attorneys/olumide-adeyemi.png",
-      bio: "Oluwaseun specializes in complex international litigation and corporate advisory. With over 20 years of experience, he guides clients through regulatory obstacles."
-    },
-    content: {
-      lead: "As global markets undergo a period of intense structural shifts, the regulatory landscape for cross-border transactions has reached a critical inflection point. Legal counsel must now navigate a dual reality of stringent compliance and accelerated digital integration.",
-      sections: [
-        {
-          heading: "The Shifting Paradigm of Compliance",
-          paragraphs: [
-            "The rapid growth of decentralized finance and cross-border digital wallets has forced regulators in the EMEA region to re-evaluate their traditional oversight models. Moving forward, compliance is no longer a periodic check, but a continuous operational integration.",
-            "Recent directives from the European Banking Authority and regional central banks indicate a unified front on capital reserve thresholds and anti-money laundering controls. FinTech players must adapt to these strictures or face severe license reviews."
-          ],
-          list: [
-            "01. The harmonization of regulatory standards across emerging markets.",
-            "02. Compliance with environmental, social, and governance (ESG) directives.",
-            "03. The integration of AI-driven legal analytics in due diligence processes."
-          ]
-        },
-        {
-          heading: "Strategic Implications for Corporate Entities",
-          paragraphs: [
-            "For corporate clients, these regulatory adjustments demand a comprehensive overhaul of existing compliance pipelines. Legal and operations teams must collaborate closer than ever to minimize transaction friction while remaining within safe regulatory boundaries."
-          ]
-        }
-      ],
-      pullQuote: "In the current climate, legal stability is the foundation of institutional growth. Precision in interpretation is not just a service—it is a necessity."
-    }
-  }
 ];
