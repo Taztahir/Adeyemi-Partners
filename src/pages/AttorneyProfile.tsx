@@ -240,19 +240,24 @@ export const AttorneyProfile: React.FC = () => {
       )}
 
       {/* Consultation Banner Footer */}
-      <section className="bg-charcoal text-ivory py-16 border-t border-gold/15 text-center">
-        <div className="max-w-2xl mx-auto px-6 space-y-6">
-          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-ivory">
-            Secure Strategic Legal Counsel
+      <section className="bg-charcoal text-ivory py-20 border-t border-gold/15 text-center">
+        <div className="max-w-3xl mx-auto px-6 space-y-6">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-4.5xl font-semibold text-ivory tracking-wide">
+            Discuss Your Representation
           </h2>
-          <p className="font-sans text-xs md:text-sm text-ivory/65 leading-relaxed">
-            Protect your interests, assets, and operations with absolute discretion. Reach out to schedule a privileged call.
+          <p className="font-sans text-xs md:text-sm text-ivory/70 max-w-2xl mx-auto leading-relaxed">
+            Schedule a private consultation with {attorney.name} to review your legal requirements with the discretion and expertise your case deserves.
           </p>
-          <div className="pt-2">
+          <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/contact">
-              <Button variant="primary" className="uppercase tracking-widest text-[11px] px-8 py-3.5 bg-ivory text-charcoal border-ivory hover:bg-gold hover:border-gold hover:text-charcoal transition-colors">
-                Request a Consultation
-              </Button>
+              <button className="bg-ivory text-charcoal font-sans text-[11px] uppercase tracking-widest px-8 py-4 font-bold rounded-[4px] hover:bg-gold hover:text-charcoal transition-all duration-300 shadow-sm focus:outline-none focus:ring-1 focus:ring-gold focus:ring-offset-2 select-none cursor-pointer">
+                Schedule Consultation
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="bg-transparent text-ivory border border-ivory/20 font-sans text-[11px] uppercase tracking-widest px-8 py-4 font-bold rounded-[4px] hover:bg-white/5 transition-all duration-300 focus:outline-none select-none cursor-pointer">
+                Direct Inquiry
+              </button>
             </Link>
           </div>
         </div>
