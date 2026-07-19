@@ -62,7 +62,7 @@ export const practiceAreas: PracticeArea[] = [
         highlighted: true
       }
     ],
-    counselIds: ['olumide-adeyemi', 'clara-obasi']
+    counselIds: ['samuel-adeyemi', 'marcus-thorne']
   },
   {
     id: 'litigation',
@@ -91,7 +91,7 @@ export const practiceAreas: PracticeArea[] = [
         highlighted: false
       }
     ],
-    counselIds: ['clara-obasi', 'olumide-adeyemi']
+    counselIds: ['victoria-sinclair', 'samuel-adeyemi']
   },
   {
     id: 'real-estate',
@@ -120,7 +120,7 @@ export const practiceAreas: PracticeArea[] = [
         highlighted: true
       }
     ],
-    counselIds: ['david-chen']
+    counselIds: ['julius-vance']
   },
   {
     id: 'family-law',
@@ -149,7 +149,7 @@ export const practiceAreas: PracticeArea[] = [
         highlighted: true
       }
     ],
-    counselIds: ['olumide-adeyemi']
+    counselIds: ['samuel-adeyemi', 'elizabeth-hart']
   },
   {
     id: 'intellectual-property',
@@ -178,7 +178,7 @@ export const practiceAreas: PracticeArea[] = [
         highlighted: false
       }
     ],
-    counselIds: ['david-chen', 'clara-obasi']
+    counselIds: ['aisha-bello', 'victoria-sinclair']
   },
   {
     id: 'employment-law',
@@ -207,6 +207,6 @@ export const practiceAreas: PracticeArea[] = [
         highlighted: true
       }
     ],
-    counselIds: ['david-chen']
+    counselIds: ['julius-vance']
   }
 ];
